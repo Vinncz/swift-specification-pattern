@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "5B5C7539-3775-4E6A-8128-F7D647FF899E",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "performanceAntipatternCheckerEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:",
+        "identifier" : "SpecificationPatternTests",
+        "name" : "SpecificationPatternTests"
+      }
+    }
+  ],
+  "version" : 1
+}
