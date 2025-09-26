@@ -3,7 +3,7 @@
 ![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
 ![Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen)
 ![License](https://img.shields.io/badge/license-MIT-blue)
-![Swift Version](https://img.shields.io/badge/swift-6.0-blue)
+![Swift Version](https://img.shields.io/badge/swift-5.5-blue)
 ![Platform](https://img.shields.io/badge/platform-iOS%20%7C%20macOS%20%7C%20tvOS%20%7C%20watchOS%20%7C%20visionOS-blue)
 
 Use the Swift Specification Pattern package to get up with speed in applying the Specification Pattern in your Swift projects.
@@ -21,11 +21,12 @@ struct ExpenseRepository {
   
   var findByWalletIdAndCategoryId(_ wid: Wallet.ID, _ cid: Category.ID) async -> [Expense]
   var findByWalletIdAndDateRange(_ wid: Wallet.ID, _ sd: Date, _ ed: Date) async -> [Expense]
+  
   // more permutations...
 }
 ```
 
-Using the specification pattern, its day and night.
+Using the specification pattern, no more combinatorial explosion of methods. Its day and night.
 ```swift
 let spec = Specification<Expense>.all
   .andIfNotEmpty(selectedWallets, applyOrBetween: { .hasWalletId($0.id) })
@@ -188,10 +189,3 @@ Testplan included.
 Contributions welcome, issues and PRs are open.
 
 Do adhere to the existing code style and include tests for new features or bug fixes.
-
-swift package --allow-writing-to-directory "./docs" \
-    generate-documentation --target "SpecificationPattern" \
-    --disable-indexing \
-    --transform-for-static-hosting \
-    --hosting-base-path "swift-specification-pattern/" \
-    --output-path "./docs"
