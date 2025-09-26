@@ -1,4 +1,4 @@
-public enum ProcessorVendor: String, Equatable, Hashable, Sendable {
+public enum ProcessorVendor: String, Codable, Equatable, Hashable, Sendable {
   
   
   case apple

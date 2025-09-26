@@ -2,7 +2,7 @@ import Foundation
 
 
 
-public struct Computer: Equatable, Hashable, Identifiable, Sendable {
+public struct Computer: Codable, Equatable, Hashable, Identifiable, Sendable {
   
   
   public let id: UUID

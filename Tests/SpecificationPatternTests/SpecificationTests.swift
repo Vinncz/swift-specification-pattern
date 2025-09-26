@@ -4,6 +4,7 @@ import Testing
 
 
 
+// swiftlint:disable type_body_length
 @Suite("Specification Tests")
 struct SpecificationTests {
   
@@ -209,7 +210,7 @@ struct SpecificationTests {
   
   @Test("`andIfNotEmpty(_: applyOrBetween:)` and `andIfNotEmpty(_: applyAndBetween:) combines correctly with empty arrays and those with values")
   func testAndIfNotEmpty() {
-    var minimumStorage: Int? = nil
+    var minimumStorage: Int?
     var preferredProcessorVendor: [ProcessorVendor] = []
     var preloadedSoftwares: [Software] = []
     
@@ -420,6 +421,7 @@ struct SpecificationTests {
   }
   
 }
+// swiftlint:enable type_body_length
 
 
 

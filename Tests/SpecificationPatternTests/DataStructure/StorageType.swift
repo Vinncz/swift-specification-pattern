@@ -1,4 +1,4 @@
-public enum StorageType: String, Equatable, Hashable, Sendable {
+public enum StorageType: String, Codable, Equatable, Hashable, Sendable {
   
   
   case ssd

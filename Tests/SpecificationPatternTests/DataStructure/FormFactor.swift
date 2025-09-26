@@ -1,4 +1,4 @@
-public enum FormFactor: String, Equatable, Hashable, Sendable {
+public enum FormFactor: String, Codable, Equatable, Hashable, Sendable {
   
   
   case desktop

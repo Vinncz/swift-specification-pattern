@@ -1,4 +1,4 @@
-public enum MemoryType: String, Equatable, Hashable, Sendable {
+public enum MemoryType: String, Codable, Equatable, Hashable, Sendable {
   
   
   case ddr4

@@ -1,4 +1,4 @@
-public struct Processor: Equatable, Hashable, Sendable {
+public struct Processor: Codable, Equatable, Hashable, Sendable {
   
   
   let modelName: String

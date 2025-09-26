@@ -1,4 +1,4 @@
-public struct Storage: Equatable, Hashable, Sendable {
+public struct Storage: Codable, Equatable, Hashable, Sendable {
   
   
   let capacityInGB: Int
