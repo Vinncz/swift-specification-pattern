@@ -8,7 +8,7 @@
 
 Use the Swift Specification Pattern package to get up with speed in applying the Specification Pattern in your Swift projects.
 
-Refer to the [documentation](https://vinncz.github.io/swift-specification-pattern/documentation/SpecificationPattern) for exhaustive definitions, relationships, and examples.
+Refer to the [documentation](https://vinncz.github.io/swift-specification-pattern/documentation/specificationpattern) for exhaustive definitions, relationships, and examples.
 
 ## TLDR; Spcecification Pattern?
 A `specification` is a building block that makes up complex filter.
